@@ -95,7 +95,6 @@ class SearchInputDecoration extends InputDecoration {
     super.suffixIconColor,
     super.prefix,
     super.prefixIconColor,
-    super.semanticsService,
     super.enabledBorder,
     super.focusedBorder,
     super.errorBorder,
