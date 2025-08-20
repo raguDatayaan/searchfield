@@ -30,7 +30,6 @@ class SearchInputDecoration extends InputDecoration {
   /// If this property is null, RenderEditable.preferredLineHeight will be used.
   final double? cursorHeight;
 
-  final bool? semanticsService;
   /// How thick the cursor will be.
   /// Defaults to 2.0.
   /// The cursor will draw under the text. The cursor width will extend to the right of the
@@ -70,7 +69,6 @@ class SearchInputDecoration extends InputDecoration {
     this.cursorWidth = 2.0,
     this.cursorOpacityAnimates,
     this.cursorRadius,
-    this.semanticsService,
     this.keyboardAppearance,
     super.border,
     super.prefixIconConstraints,
@@ -138,7 +136,6 @@ class SearchInputDecoration extends InputDecoration {
   SearchInputDecoration copyWith({
     Key? key,
     Color? cursorColor,
-    bool? semanticsService,
     Color? cursorErrorColor,
     double? cursorHeight,
     double? cursorWidth,
@@ -212,7 +209,6 @@ class SearchInputDecoration extends InputDecoration {
       searchStyle: searchStyle ?? this.searchStyle,
       prefixIconConstraints:
           prefixIconConstraints ?? this.prefixIconConstraints,
-      semanticsService: semanticsService ?? this.semanticsService,
       suffixIconConstraints:
           suffixIconConstraints ?? this.suffixIconConstraints,
       hintMaxLines: hintMaxLines ?? this.hintMaxLines,
